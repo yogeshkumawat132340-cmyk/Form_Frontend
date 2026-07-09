@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { CartProvider } from "react-use-cart";
 import Dashboard from "./pages/Dashboard.jsx";
 import CreateForm from "./components/Admin/CreateForm.jsx";
@@ -8,7 +8,7 @@ import ResponsesPage from "./pages/ResponsesPage.jsx";
 function App() {
   return (
     <CartProvider>
-      <HashRouter>
+      <BrowserRouter>
         <nav className="navbar">
           <h2>📋 Form Builder</h2>
           <div className="nav-links">
@@ -23,7 +23,7 @@ function App() {
           <Route path="/form/:id" element={<DynamicForm />} />
           <Route path="/responses/:id" element={<ResponsesPage />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </CartProvider>
   );
 }
