@@ -61,7 +61,7 @@ function Preview({ title, fields, style }) {
       <h2 style={{ fontSize: `calc(${style.fontSize} + 8px)` }}>{title || "Untitled Form"}</h2>
 
       {fields.length === 0 && (
-        <p style={{ color: "#9ca3af" }}>Left side se fields add karein, preview yaha dikhega.</p>
+        <p style={{ color: "#9ca3af" }}>add field from left side, preview will show here.</p>
       )}
 
       {fields.map((field) => (

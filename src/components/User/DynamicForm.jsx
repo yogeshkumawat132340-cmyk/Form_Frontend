@@ -17,7 +17,7 @@ function DynamicForm() {
         setForm(res.data);
       } catch (err) {
         console.error("Form fetch error:", err);
-        setError("Form load nahi ho paya. Link check karein.");
+        setError("not able to load please check the field .");
       } finally {
         setLoading(false);
       }
@@ -40,12 +40,11 @@ function DynamicForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Simple required-field validation
     for (const field of form.fields) {
       if (field.required) {
         const val = answers[field._id];
         if (!val || (Array.isArray(val) && val.length === 0)) {
-          alert(`"${field.label}" field required hai.`);
+          alert(`"${field.label}" field required .`);
           return;
         }
       }

@@ -50,7 +50,7 @@ function Dashboard() {
       {loading && <p>Loading...</p>}
 
       {!loading && forms.length === 0 && (
-        <div className="empty-state">dont't make any form yek "+ Create Form" click to start</div>
+        <div className="empty-state">No any Form Yet "+ Create Form" click to start</div>
       )}
 
       <div className="form-list">

@@ -75,7 +75,7 @@ function CreateForm() {
       navigate("/");
     } catch (err) {
       console.error("Save error:", err);
-      alert("Form save karne me error aayi. Console check karein.");
+      alert("error into form saving. check it.");
     } finally {
       setSaving(false);
     }
@@ -85,7 +85,6 @@ function CreateForm() {
 
   return (
     <div className="builder-container">
-      {/* LEFT SIDE - Builder Controls */}
       <div className="builder-left">
         <div className="panel">
           <h3>Form Title</h3>
