@@ -35,7 +35,7 @@ function Dashboard() {
   const copyLink = (id) => {
     const link = `${window.location.origin}/form/${id}`;
     navigator.clipboard.writeText(link);
-    alert("Form link copy ho gaya:\n" + link);
+    alert("Form's link copy successfully :\n" + link);
   };
 
   return (
